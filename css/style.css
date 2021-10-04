@@ -1,0 +1,238 @@
+body {
+    font-family: "Arial";
+    cursor: url('cursor.cur'), auto;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+}
+.main_menu {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    list-style: none;
+    background-color: #2a3644;
+}
+.menu {
+    margin-bottom: 40px;
+}
+.menu a{
+    display: block;
+    padding: 15px 30px 13px;
+    font-weight: bold;
+}
+.menu>ul>li>a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-left: 1px solid #3f4852;
+    border-right: 1px solid #3f4852;
+}
+.menu>ul>li:hover>a {
+    color: #fd8612;
+    background-color: #3f4852;
+}
+.menu ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.menu li:hover .sub_menu{
+    display: block;
+}
+.sub_menu{
+    position: absolute;
+    display: none;
+    padding-top: 5px;
+    width: 210px;
+    z-index: 1;
+
+    
+}
+.menu .sub_menu li{
+    position: relative;
+    display: block;
+    /* border-bottom: 1px solid #b9bdc1; */
+}
+.sub_menu li+li{
+    border-top: 1px solid #b9bdc1;
+}
+.sub_menu a{
+    color: #2a3644;
+    text-decoration: none;
+    background-color: #d2d4d5;
+}
+/* .sub_menu li:hover a{
+    color: #fd8612;
+    background-color: #2a3644;
+} */
+.sub_menu li:first-child a{
+    border-radius: 3px 3px 0 0;
+}  
+.table_css_menu a {
+    display: block;
+}
+.menu_flex {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2a3644;
+}
+.menu_flex>ul {
+    display: flex;
+}
+a.house {
+    position: relative;
+    padding-left: 55px;
+}
+.house::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 31px;
+    width: 16px;
+    height: 13px;
+    background: url(../img/sprite.png) no-repeat -58px -2px;
+}
+.sprite {
+    padding: 0 17px;
+}
+.sprite a {
+    display: block;
+    padding: 0;
+    background: url(../img/sprite.png) no-repeat;
+    transition: all 1s ease;
+    border: none;
+}
+.sprite li {
+    padding: 13px;
+}
+a.fb{
+    width: 10px;
+    height: 19px;
+    background-position: -2px 0;
+}
+a.fb:hover{
+    background-position: -2px -22px;
+}
+a.tw{
+    width: 18px;
+    height: 15px;
+    background-position: -37px -2px;
+}
+a.tw:hover{
+    background-position: -37px -23px;
+}
+a.inst{
+    width: 19px;
+    height: 19px;
+    background-position: -16px 0;
+}
+a.inst:hover{
+    background-position:-16px -22px; 
+}
+.table,
+.table_css,
+.table_css_menu {
+    overflow: hidden;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 3px;
+}
+
+.table tr:first-child th:nth-child(2) {
+    text-align: left;
+}
+
+.table th,
+.table_css b,
+.table_css_menu>ul>li>a {
+    padding: 13px 25px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #2a3644;
+    border-right: 1px solid #3f4852;
+    border-bottom: 1px solid #3f4852;
+}
+
+.table td:nth-child(2),
+.table_css b:nth-child(2) {
+    width: 60%;
+}
+
+.table tr:nth-child(2n+1) {
+    background-color: #f2f2f2;
+}
+
+.table tr:nth-child(2n),
+.table_css p:nth-child(2n) {
+    background-color: #e8e8e8;
+}
+
+.table tr:hover td,
+.table_css p:hover i {
+    background-color: #c0c1c2;
+}
+
+.table td,
+.table_css i {
+    padding: 13px 25px;
+    color: #2a3644;
+    border-right: 1px solid #c0c1c2;
+    border-bottom: 1px solid #c0c1c2;
+}
+
+.table td:first-child {
+    text-align: center;
+}
+
+.table td:nth-child(n+3),
+.table_css i:nth-child(n+3) {
+    text-align: right;
+}
+
+.table td:last-child,
+.table th:last-child {
+    border-right: none;
+}
+
+.table tr:last-child td,
+.table_css p:last-child i {
+    border-bottom: none;
+}
+
+.table_css,
+.table_css_menu {
+    display: table;
+}
+
+.table_css b,
+.table_css_menu li {
+    display: table-cell;
+    text-align: center;
+    text-decoration: none;
+}
+
+.table_css p,
+.table_css_menu ul {
+    display: table-row;
+}
+
+.table_css p:first-child b:nth-child(2) {
+    text-align: left;
+}
+
+.table_css p:nth-child(2n+1) {
+    background-color: #f2f2f2;
+}
+
+.table_css i:last-child,
+.table_css b:last-child {
+    border-right: none;
+}
+
+.table_css i {
+    display: table-cell;
+    font-style: normal;
+}
